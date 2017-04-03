@@ -1,0 +1,664 @@
+{
+  "createdAt": "2017-03-27T14:28:23.520Z",
+  "version": "9.14.64.305",
+  "kind": "ARC#AllDataExport",
+  "requests": [
+    {
+      "type": "saved",
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "name": "SubmitIncident",
+      "payload": "{\"incidentId\":\"2334543\",\"status\":\"NEW\",\"errorLog\":\"FxRestfulController: Request Quote CHF/HKD FxRestfulController.java\",\"solution\":\"setup CHF/HKD ccy quotation\"}",
+      "url": "http://localhost:8082/submitIncident",
+      "updated": 1485683960971,
+      "_referenceLegacyProject": "e26684ce-ae11-4ccb-ac76-63716ad2e1d3",
+      "kind": "ARC#RequestData"
+    },
+    {
+      "type": "saved",
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "name": "SubmitIncidentAWS",
+      "payload": "{\"incidentId\":\"2334543\",\"status\":\"NEW\",\"errorLog\":\"FxRestfulController: Request Quote CHF/HKD FxRestfulController.java\",\"solution\":\"setup CHF/HKD ccy quotation\"}",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitIncident",
+      "updated": 1485789759935,
+      "_referenceLegacyProject": "e26684ce-ae11-4ccb-ac76-63716ad2e1d3",
+      "kind": "ARC#RequestData"
+    },
+    {
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"ccy1\":\"DKK\",\"ccy2\":\"JPY\"}",
+      "url": "http://localhost:8080/quotefxpair",
+      "name": "TestFxQuotePair",
+      "type": "saved",
+      "updated": 1484980552246,
+      "_referenceLegacyProject": "4d86874f-160b-45e2-a8d6-befe5d1df86e",
+      "kind": "ARC#RequestData"
+    },
+    {
+      "url": "http://localhost:8082/dumpModel",
+      "method": "GET",
+      "headers": "",
+      "payload": "",
+      "name": "dumpModel",
+      "type": "saved",
+      "updated": 1485007943459,
+      "_referenceLegacyProject": "e26684ce-ae11-4ccb-ac76-63716ad2e1d3",
+      "kind": "ARC#RequestData"
+    },
+    {
+      "type": "saved",
+      "headers": "",
+      "method": "GET",
+      "name": "dumpModelAWS",
+      "payload": "",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/dumpModel",
+      "updated": 1485008570231,
+      "_referenceLegacyProject": "e26684ce-ae11-4ccb-ac76-63716ad2e1d3",
+      "kind": "ARC#RequestData"
+    },
+    {
+      "url": "http://localhost:8082/getSystemStatus",
+      "method": "GET",
+      "headers": "",
+      "payload": "",
+      "name": "getSystemStatus",
+      "type": "saved",
+      "updated": 1485008295001,
+      "_referenceLegacyProject": "e26684ce-ae11-4ccb-ac76-63716ad2e1d3",
+      "kind": "ARC#RequestData"
+    },
+    {
+      "type": "saved",
+      "headers": "",
+      "method": "GET",
+      "name": "getSystemStatusAWS",
+      "payload": "",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/getSystemStatus",
+      "updated": 1485008610330,
+      "_referenceLegacyProject": "e26684ce-ae11-4ccb-ac76-63716ad2e1d3",
+      "kind": "ARC#RequestData"
+    },
+    {
+      "type": "saved",
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "name": "queryIncidentFromLog",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRestfulController: USDUSD not found: ccy1 and ccy2 should not be the same FxRestfulController.java 208 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://localhost:8082/queryIncidentFromLog",
+      "updated": 1485768225468,
+      "_referenceLegacyProject": "e26684ce-ae11-4ccb-ac76-63716ad2e1d3",
+      "kind": "ARC#RequestData"
+    },
+    {
+      "type": "saved",
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "name": "queryIncidentFromLogAWS",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRestfulController: USDUSD not found: ccy1 and ccy2 should not be the same FxRestfulController.java 208 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/queryIncidentFromLog",
+      "updated": 1490624734521,
+      "_referenceLegacyProject": "e26684ce-ae11-4ccb-ac76-63716ad2e1d3",
+      "kind": "ARC#RequestData"
+    },
+    {
+      "url": "http://localhost:8082/submitlog",
+      "method": "POST",
+      "headers": "Content-Type: application/json",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRateUpdaterThread: org.springframework.web.client.ResourceAccessException: I/O error on GET request for \\\"http://www.apilayer.ne/api/live\\\": www.apilayer.ne: nodename nor servname provided, or not known; nested exception is java.net.UnknownHostException: www.apilayer.ne: nodename nor servname provided, or not known FxRateUpdaterThread.java 88 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "name": "submitlog",
+      "type": "saved",
+      "updated": 1485764205282,
+      "_referenceLegacyProject": "e26684ce-ae11-4ccb-ac76-63716ad2e1d3",
+      "kind": "ARC#RequestData"
+    },
+    {
+      "type": "saved",
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "name": "submitlogAWS",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRateUpdaterThread: org.springframework.web.client.ResourceAccessException: I/O error on GET request for \\\"http://www.apilayer.ne/api/live\\\": www.apilayer.ne: nodename nor servname provided, or not known; nested exception is java.net.UnknownHostException: www.apilayer.ne: nodename nor servname provided, or not known FxRateUpdaterThread.java 88 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitlog",
+      "updated": 1485764217886,
+      "_referenceLegacyProject": "e26684ce-ae11-4ccb-ac76-63716ad2e1d3",
+      "kind": "ARC#RequestData"
+    }
+  ],
+  "projects": [
+    {
+      "name": "FXQuotation",
+      "order": 0,
+      "created": 1484980552215,
+      "updated": 1484980552224,
+      "_referenceId": "4d86874f-160b-45e2-a8d6-befe5d1df86e",
+      "kind": "ARC#ProjectData"
+    },
+    {
+      "name": "PyLog",
+      "order": 0,
+      "created": 1484980881298,
+      "updated": 1484980881315,
+      "_referenceId": "e26684ce-ae11-4ccb-ac76-63716ad2e1d3",
+      "kind": "ARC#ProjectData"
+    }
+  ],
+  "history": [
+    {
+      "created": 1482061856313,
+      "updated": 1482061856313,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"ccy1\":\"HKD\",\"ccy2\":\"JPY\"}",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8080/quotefxpair",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1482054469499,
+      "updated": 1482059334832,
+      "method": "POST",
+      "payload": "{\"ccy1\":\"HKD\",\"ccy2\":\"JPY\"}",
+      "url": "http://localhost:8000/quotefxpair",
+      "headers": "Content-Type: application/json",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1482062749665,
+      "updated": 1482072463629,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"ccy1\":\"EUR\",\"ccy2\":\"JPY\"}",
+      "url": "http://localhost:8080/quotefxpair",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1483085085734,
+      "updated": 1483086671211,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"ccy1\":\"EUR\",\"ccy2\":\"JPY\"}",
+      "url": "http://localhost:8080/quotefxpair",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1483153133795,
+      "updated": 1483180337068,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"ccy1\":\"USD\",\"ccy2\":\"JPY\"}",
+      "url": "http://localhost:8080/quotefxpair",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1483621949729,
+      "updated": 1483621949729,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"ccy1\":\"DKK\",\"ccy2\":\"JPY\"}",
+      "url": "http://localhost:8080/quotefxpair",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1483946988739,
+      "updated": 1483946988739,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"ccy1\":\"DKK\",\"ccy2\":\"JPY\"}",
+      "url": "http://localhost:8080/quotefxpair",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485008556524,
+      "updated": 1485008734849,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/dumpModel",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485008599975,
+      "updated": 1485008728302,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/getSystemStatus",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1484991862679,
+      "updated": 1485008775831,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"STATUS\":\"OK\",\"MESSAGE\": \"FxRestfulController: UAEJPY not found: Graph must contain the end vertex! FxRestfulController.java 64 \",\"ISO_DATE\": \"2016-12-30 16:27:54,435\"}",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485007789464,
+      "updated": 1485008349066,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://localhost:8082/dumpModel",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485008272830,
+      "updated": 1485008339639,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://localhost:8082/getSystemStatus",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1484980920137,
+      "updated": 1485008328341,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"STATUS\":\"OK\",\"MESSAGE\": \"FxRateUpdaterThread: unknown issue\",\"ISO_DATE\": \"2016-12-30 16:27:54,435\"}",
+      "url": "http://localhost:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485186536050,
+      "updated": 1485186917122,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/dumpModel",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485181167484,
+      "updated": 1485181594623,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/getSystemStatus",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485237122726,
+      "updated": 1485237217878,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/dumpModel",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485237149440,
+      "updated": 1485237149440,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/getSystemStatus",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485237201787,
+      "updated": 1485237268701,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"STATUS\":\"OK\",\"MESSAGE\": \"FxRestfulController: UAEJPY not found: Graph must contain the end vertex! FxRestfulController.java 64 \",\"ISO_DATE\": \"2016-12-30 16:27:54,435\"}",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485532713953,
+      "updated": 1485532722621,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"STATUS\":\"OK\",\"MESSAGE\": \"FxRestfulController: UAEJPY not found: Graph must contain the end vertex! FxRestfulController.java 64 \",\"ISO_DATE\": \"2016-12-30 16:27:54,435\"}",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485616574833,
+      "updated": 1485616574833,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/dumpModel",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485534601454,
+      "updated": 1485534621377,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"STATUS\":\"OK\",\"MESSAGE\": \"FxRestfulController: UAEJPY not found: Graph must contain the end vertex! FxRestfulController.java 64 \",\"ISO_DATE\": \"2016-12-30 16:27:54,435\"}",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485574975768,
+      "updated": 1485574975768,
+      "headers": "Content-Type: application/json",
+      "method": "OPTIONS",
+      "payload": "{\"STATUS\":\"OK\",\"MESSAGE\": \"FxRateUpdaterThread: org.springframework.web.client.ResourceAccessException: I/O error on GET request for \\\"http://www.apilayer.ne/api/live\\\": www.apilayer.ne: nodename nor servname provided, or not known; nested exception is java.net.UnknownHostException: www.apilayer.ne: nodename nor servname provided, or not known FxRateUpdaterThread.java 88 \",\"ISO_DATE\": \"2016-12-30 16:27:54,435\"}",
+      "url": "http://localhost:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485534632284,
+      "updated": 1485534632284,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"STATUS\":\"OK\",\"MESSAGE\": \"FxRateUpdaterThread: org.springframework.web.client.ResourceAccessException: I/O error on GET request for \\\"http://www.apilayer.ne/api/live\\\": www.apilayer.ne: nodename nor servname provided, or not known; nested exception is java.net.UnknownHostException: www.apilayer.ne: nodename nor servname provided, or not known FxRateUpdaterThread.java 88 \",\"ISO_DATE\": \"2016-12-30 16:27:54,435\"}",
+      "url": "http://localhost:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485662781311,
+      "updated": 1485679516213,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://localhost:8082/dumpModel",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485662790336,
+      "updated": 1485662790336,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://localhost:8082/getSystemStatus",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485679940049,
+      "updated": 1485682976361,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"incidentId\":\"2334543\",\"status\":\"NEW\",\"errorLog\":\"FxRestfulController: Request Quote CHF/HKD FxRestfulController.java\",\"solution\":\"setup CHF/HKD quotation\"}",
+      "url": "http://localhost:8082/submitIncident",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485662799748,
+      "updated": 1485662799748,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"STATUS\":\"OK\",\"MESSAGE\": \"FxRateUpdaterThread: org.springframework.web.client.ResourceAccessException: I/O error on GET request for \\\"http://www.apilayer.ne/api/live\\\": www.apilayer.ne: nodename nor servname provided, or not known; nested exception is java.net.UnknownHostException: www.apilayer.ne: nodename nor servname provided, or not known FxRateUpdaterThread.java 88 \",\"ISO_DATE\": \"2016-12-30 16:27:54,435\"}",
+      "url": "http://localhost:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485789678614,
+      "updated": 1485789678614,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/dumpModel",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485789781354,
+      "updated": 1485790081886,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRestfulController: USDUSD not found: ccy1 and ccy2 should not be the same FxRestfulController.java 208 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/queryIncidentFromLog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485789763479,
+      "updated": 1485789763479,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"incidentId\":\"2334543\",\"status\":\"NEW\",\"errorLog\":\"FxRestfulController: Request Quote CHF/HKD FxRestfulController.java\",\"solution\":\"setup CHF/HKD ccy quotation\"}",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitIncident",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485788453074,
+      "updated": 1485788705429,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://localhost:8082/dumpModel",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485764095411,
+      "updated": 1485789688543,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRestfulController: USDUSD not found: ccy1 and ccy2 should not be the same FxRestfulController.java 208 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://localhost:8082/queryIncidentFromLog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485763976792,
+      "updated": 1485768136342,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRateUpdaterThread: org.springframework.web.client.ResourceAccessException: I/O error on GET request for \\\"http://www.apilayer.ne/api/live\\\": www.apilayer.ne: nodename nor servname provided, or not known; nested exception is java.net.UnknownHostException: www.apilayer.ne: nodename nor servname provided, or not known FxRateUpdaterThread.java 88 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://localhost:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485848178234,
+      "updated": 1485848645558,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRestfulController: Request Quote CHF/HKD FxRestfulController.java \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/queryIncidentFromLog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1485848146572,
+      "updated": 1485848606222,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"incidentId\":\"2334543\",\"status\":\"NEW\",\"errorLog\":\"FxRestfulController: Request Quote CHF/HKD FxRestfulController.java at 100\",\"solution\":\"setup CHF/HKD ccy quotation\"}",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitIncident",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1486976883920,
+      "updated": 1486976883920,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRestfulController: USDUSD not found: ccy1 and ccy2 should not be the same FxRestfulController.java 208 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/queryIncidentFromLog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1487470048133,
+      "updated": 1487470048133,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRestfulController: USDUSD not found: ccy1 and ccy2 should not be the same FxRestfulController.java 208 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/queryIncidentFromLog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1487513460120,
+      "updated": 1487513460120,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRateUpdaterThread: org.springframework.web.client.ResourceAccessException: I/O error on GET request for \\\"http://www.apilayer.ne/api/live\\\": www.apilayer.ne: nodename nor servname provided, or not known; nested exception is java.net.UnknownHostException: www.apilayer.ne: nodename nor servname provided, or not known FxRateUpdaterThread.java 88 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1487472037906,
+      "updated": 1487472037906,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://localhost:8082/dumpModel",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1487471738598,
+      "updated": 1487488508054,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRestfulController: USDUSD not found: ccy1 and ccy2 should not be the same FxRestfulController.java 208 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://localhost:8082/queryIncidentFromLog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1487472087359,
+      "updated": 1487489189343,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"dsfsadf issue dfsdgsdf\", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://localhost:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1488602565850,
+      "updated": 1488602565850,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRateUpdaterThread: org.springframework.web.client.ResourceAccessException: I/O error on GET request for \\\"http://www.apilayer.ne/api/live\\\": www.apilayer.ne: nodename nor servname provided, or not known; nested exception is java.net.UnknownHostException: www.apilayer.ne: nodename nor servname provided, or not known FxRateUpdaterThread.java 88 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1490075486920,
+      "updated": 1490075486920,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/getSystemStatus",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1490075493551,
+      "updated": 1490075493551,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRestfulController: USDUSD not found: ccy1 and ccy2 should not be the same FxRestfulController.java 208 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/queryIncidentFromLog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1490075376304,
+      "updated": 1490075376304,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\"incidentId\":\"2334543\",\"status\":\"NEW\",\"errorLog\":\"FxRestfulController: Request Quote CHF/HKD FxRestfulController.java\",\"solution\":\"setup CHF/HKD ccy quotation\"}",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitIncident",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1490075511677,
+      "updated": 1490075511677,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRateUpdaterThread: org.springframework.web.client.ResourceAccessException: I/O error on GET request for \\\"http://www.apilayer.ne/api/live\\\": www.apilayer.ne: nodename nor servname provided, or not known; nested exception is java.net.UnknownHostException: www.apilayer.ne: nodename nor servname provided, or not known FxRateUpdaterThread.java 88 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitlog",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1490624672585,
+      "updated": 1490624724866,
+      "headers": "Content-Type: application/json",
+      "method": "POST",
+      "payload": "{\n  \"ISO_DATE\": \"2016-12-30 16:27:54,435\", \n  \"MESSAGE\": \"FxRestfulController: USDUSD not found: ccy1 and ccy2 should not be the same FxRestfulController.java 208 \", \n  \"STATUS\": \"OK\"\n}\n",
+      "url": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/queryIncidentFromLog",
+      "kind": "ARC#HistoryData"
+    }
+  ],
+  "url-history": [
+    {
+      "cnt": 1,
+      "time": 1485008526872,
+      "key": "http://ec2-54-208-51-43.compute-1.amazonaws.com/:8082/dumpModel",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 2,
+      "time": 1482062026890,
+      "key": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8080/quotefxpair",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 9,
+      "time": 1485789678600,
+      "key": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/dumpModel",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 8,
+      "time": 1490075486905,
+      "key": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/getSystemStatus",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 9,
+      "time": 1490624724853,
+      "key": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/queryIncidentFromLog",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 6,
+      "time": 1490075376263,
+      "key": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitIncident",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 16,
+      "time": 1490075511617,
+      "key": "http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitlog",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 1,
+      "time": 1484991853627,
+      "key": "http://http://ec2-54-208-51-43.compute-1.amazonaws.com:8082/submitlog",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 14,
+      "time": 1482059334817,
+      "key": "http://localhost:8000/quotefxpair",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 20,
+      "time": 1483946988655,
+      "key": "http://localhost:8080/quotefxpair",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 12,
+      "time": 1487472047472,
+      "key": "http://localhost:8082/dumpModel",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 3,
+      "time": 1485662790320,
+      "key": "http://localhost:8082/getSystemStatus",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 14,
+      "time": 1487488508004,
+      "key": "http://localhost:8082/queryIncidentFromLog",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 15,
+      "time": 1485682976340,
+      "key": "http://localhost:8082/submitIncident",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 43,
+      "time": 1487489189327,
+      "key": "http://localhost:8082/submitlog",
+      "kind": "ARC#UrlHistoryData"
+    }
+  ],
+  "variables": [ ]
+}
