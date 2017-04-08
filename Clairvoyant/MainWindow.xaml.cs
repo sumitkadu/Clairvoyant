@@ -1,19 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 using RestClient;
+using System.ServiceModel;
+using System.ServiceModel.Description;
 
 namespace Clairvoyant
 {
@@ -22,6 +14,7 @@ namespace Clairvoyant
     /// </summary>
     public partial class MainWindow : Window
     {
+        ServiceHost sh = null;
         public MainWindow()
         {
             InitializeComponent();
@@ -56,6 +49,56 @@ namespace Clairvoyant
             else
             {
                 MessageBox.Show("Please provide input payload", "Message", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            sh = new ServiceHost(typeof(Service), new Uri(ConfigurationManager.AppSettings["HostServiceURL"]));
+            bool openSucceeded = false;
+            //TRY OPENINNG, IF FAILS THE HOST WILL BE ABORTED 
+            try
+            {
+                ServiceEndpoint sep = sh.AddServiceEndpoint(typeof(Service), new WebHttpBinding(), "Hosting");
+                sep.Behaviors.Add(new WebHttpBehavior());
+                sh.Open();
+                openSucceeded = true;
+            }
+            catch (Exception ex)
+            {
+                lblServiceStatus.Content = "Service host failed to open";
+            }
+            finally
+            {
+                if (!openSucceeded)
+                    sh.Abort();                
+            }
+
+            if (sh.State == CommunicationState.Opened)
+                lblServiceStatus.Content = "The Service is running";
+            else
+                lblServiceStatus.Content = "Server failed to open";                        
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            bool closeSucceed = false;
+            try
+            {
+                if (sh != null)
+                {
+                    closeSucceed = true;
+                    sh.Close();
+                }   
+            }
+            catch
+            {
+                
+            }
+            finally
+            {
+                if (!closeSucceed)
+                    sh.Abort();                
             }
         }
     }
