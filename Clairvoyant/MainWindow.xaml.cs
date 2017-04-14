@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Configuration;
 using System.Windows;
 using System.Windows.Input;
 
 using RestClient;
-using System.ServiceModel;
-using System.ServiceModel.Description;
 
 namespace Clairvoyant
 {
@@ -13,8 +10,7 @@ namespace Clairvoyant
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
-        ServiceHost sh = null;
+    {       
         public MainWindow()
         {
             InitializeComponent();
@@ -54,52 +50,13 @@ namespace Clairvoyant
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            sh = new ServiceHost(typeof(Service), new Uri(ConfigurationManager.AppSettings["HostServiceURL"]));
-            bool openSucceeded = false;
-            //TRY OPENINNG, IF FAILS THE HOST WILL BE ABORTED 
-            try
-            {
-                ServiceEndpoint sep = sh.AddServiceEndpoint(typeof(Service), new WebHttpBinding(), "Hosting");
-                sep.Behaviors.Add(new WebHttpBehavior());
-                sh.Open();
-                openSucceeded = true;
-            }
-            catch (Exception ex)
-            {
-                lblServiceStatus.Content = "Service host failed to open";
-            }
-            finally
-            {
-                if (!openSucceeded)
-                    sh.Abort();                
-            }
-
-            if (sh.State == CommunicationState.Opened)
-                lblServiceStatus.Content = "The Service is running";
-            else
-                lblServiceStatus.Content = "Server failed to open";                        
+            RemoteWcfService.RestServiceClient client = new RemoteWcfService.RestServiceClient();
+            txtRestOutput.Text = client.GetData();
         }
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            bool closeSucceed = false;
-            try
-            {
-                if (sh != null)
-                {
-                    closeSucceed = true;
-                    sh.Close();
-                }   
-            }
-            catch
-            {
-                
-            }
-            finally
-            {
-                if (!closeSucceed)
-                    sh.Abort();                
-            }
+            
         }
     }
 }

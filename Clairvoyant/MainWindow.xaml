@@ -30,9 +30,8 @@
         <TextBox x:Name="txtPayload" HorizontalAlignment="Left" Height="59" Margin="687,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245" Foreground="Black" FontSize="10" AcceptsReturn="True" AcceptsTab="True" AutoWordSelection="True" MinLines="1"/>
         <Button x:Name="btnGetData" HorizontalAlignment="Left" Margin="733,143,0,0" VerticalAlignment="Top" Width="118" Click="btnGetData_Click" Height="33" Content="Get Details" Foreground="#FFFBFBFB" Background="#FF2D46A5"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="24" Margin="496,12,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="2.147,0.333" Source="clairvoyant_eGW_icon.ico"/>
-        <TextBox x:Name="txtRestOutput" HorizontalAlignment="Left" Height="313" Margin="10,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="384" Foreground="Black" FontSize="10" AcceptsReturn="True" AcceptsTab="True" AutoWordSelection="True" MinLines="1"/>
+        <TextBox x:Name="txtRestOutput" HorizontalAlignment="Left" Height="341" Margin="10,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="384" Foreground="Black" FontSize="10" AcceptsReturn="True" AcceptsTab="True" AutoWordSelection="True" MinLines="1"/>
         <Label x:Name="label4_Copy" Content="New Issues Posted Via REST Service" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.568,-0.369" Height="25" Width="223" Foreground="White"/>
-        <Label x:Name="lblServiceStatus" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.568,-0.369" Height="25" Width="384" Foreground="#FFF10B0B"/>
 
     </Grid>
 </Window>
