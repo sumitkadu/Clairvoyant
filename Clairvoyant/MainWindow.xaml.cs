@@ -47,16 +47,11 @@ namespace Clairvoyant
                 MessageBox.Show("Please provide input payload", "Message", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        
+        private void btnService_Click(object sender, RoutedEventArgs e)
         {
             RemoteWcfService.RestServiceClient client = new RemoteWcfService.RestServiceClient();
             txtRestOutput.Text = client.GetData();
-        }
-
-        private void Window_Closed(object sender, EventArgs e)
-        {
-            
         }
     }
 }
