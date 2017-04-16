@@ -42,5 +42,27 @@ namespace RestClient
                 throw ex;
             }
         }
+
+        public static string GetLog(string requestUrl)
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(requestUrl);
+            try
+            {
+                string data = string.Empty;     
+                request.Method = "GET";
+                WebResponse response = request.GetResponse();
+                using (Stream responseStream = response.GetResponseStream())
+                {
+                    StreamReader reader = new StreamReader(responseStream, Encoding.UTF8);
+                    data = reader.ReadToEnd();
+                }
+
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

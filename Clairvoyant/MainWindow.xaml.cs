@@ -50,8 +50,7 @@ namespace Clairvoyant
         
         private void btnService_Click(object sender, RoutedEventArgs e)
         {
-            RemoteWcfService.RestServiceClient client = new RemoteWcfService.RestServiceClient();
-            txtRestOutput.Text = client.GetData();
+            txtRestOutput.Text = RestClient.RestClient.GetLog(System.Configuration.ConfigurationManager.AppSettings["HostServiceURL"]);            
         }
     }
 }
